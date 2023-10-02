@@ -1,0 +1,12 @@
+.wid{
+    width: 200px;
+    /* text-align: center; */
+}
+.widhr{
+    width: 100px;
+    text-align: center;
+}
+.widdd{
+    width: 90px;
+    background-color: red;
+}
