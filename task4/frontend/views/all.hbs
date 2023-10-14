@@ -1,0 +1,30 @@
+{{>header}}
+{{>navbar}}
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>name</th>
+            <th>age</th>
+            <th>email</th>
+            <th>adresstype</th>
+            <th>adressdetail</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{ages}}</td>
+            <td>{{email}}</td>
+                <td>{{adresstype}}</td>
+                <td>{{adressdetail}}</td>
+
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{>footer}}
