@@ -1,0 +1,21 @@
+<p>services works!</p>
+<div class="container" >
+    <input type="text" class="form-control my-3" placeholder="Search by Name" [(ngModel)]="model" (change)="fillter()">
+    <!-- <div>{{model}}</div> -->
+    <table  class="table table-bordered my-3" >
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let user of users ; let i = index">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>
+                <button class="btn bg-danger text-white" (click)="del(i)" >Delete User</button>
+            </td>
+        </tr>
+    </table>
+</div>
